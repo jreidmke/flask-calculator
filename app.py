@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home_page():
-    return "Welcome to math"
+    return """Welcome to math. To perform an operation, input your information in the URL <br><br> EX: '/add?a=1&b=2' will return an output of 'Your sum is 3.'<br><br> Operation Codes: <br> Subtraction: '/sub' <br> Multiplication: '/mult' <br> Division: '/div'"""
 
 @app.route('/add')
 def show_sum():
